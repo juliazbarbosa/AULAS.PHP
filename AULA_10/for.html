@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Usando loop For</title>
+</head>
+
+<body>
+    <div>
+        <form method="get" action="tabuada.php">
+            <select name="num">
+                <?php
+                    for ($c = 1; $c <= 10; $c++) {
+                        echo "<option value="$c">$c</option>";
+                    }
+                ?>
+            </select>
+            <input type="submit" value="Tabuada" />
+        </form>
+    </div>
+</body>
+
+</html>
